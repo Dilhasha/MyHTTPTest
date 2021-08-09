@@ -1,7 +1,6 @@
 import ballerina/test;
 import ballerina/http;
 import ballerina/io;
-import mymock.foo as _;
 
 public client class MockHttpClient {
 
@@ -14,23 +13,17 @@ remote function get(@untainted string path, map<string|string[]>? headers = (), 
     }
 }
 
-// @test:Mock {
-//     moduleName: "mymock.foo",
-//     functionName: "getHttpClient"
-// }
-// function getMockClient() returns http:Client {
-//     http:Client mockCl = <http:Client>test:mock(http:Client, new MockHttpClient());
-//     return mockCl;
-// }
-
 @test:Mock {
     moduleName: "mymock.foo",
-    functionName: "getCurrentClient"
+    functionName: "getAuthConfig"
 }
-isolated function getCurrentClient() returns http:Client {
-    http:Client mockCl = <http:Client>test:mock(http:Client, new MockHttpClient());
-    return mockCl;
+function getMockAuthConfig() returns http:ClientConfiguration {
+    return {
+    auth: {
+    }
+};
 }
+
  @test:Config {}
  function testGetRandomJoke() {
      string result = checkpanic getMyJoke("Sheldon");

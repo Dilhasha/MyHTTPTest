@@ -3,10 +3,9 @@ import ballerina/regex;
 import ballerina/io;
 import ballerina/http;
 
-
   // This function performs a `get` request to the Chuck Norris API and returns a random joke 
  // with the name replaced by the provided name or an error if the API invocation fails.
- public isolated function getRandomJoke(string name) returns @tainted string|error {
+ public function getRandomJoke(string name) returns @tainted string|error {
      http:Response response = check foo:clientEndpoint ->get("/random");
      if (response.statusCode == http:STATUS_OK) {
          var payload = response.getJsonPayload();

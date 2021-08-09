@@ -1,12 +1,15 @@
 import ballerina/http;
 
-public final http:Client clientEndpoint = check getCurrentClient();
+public final http:Client clientEndpoint = check new ("https://api.chucknorris.io/jokes/", getAuthConfig());
 
-public isolated function getCurrentClient() returns http:Client|error {
-     return new ("https://api.chucknorris.io/jokes/");
+public function getAuthConfig() returns http:ClientConfiguration {
+    return {
+    auth: {
+        tokenUrl: "http://localhost:9095/test/token",
+        clientId: "clid124",
+        clientSecret: "clsc972",
+        optionalParams: {}
+    }
+};
 }
 
-
-// public function getHttpClient() returns http:Client|http:ClientError {
-//      return new ("https://api.chucknorris.io/jokes/");
-// }
