@@ -1,41 +1,25 @@
 import ballerina/test;
 import ballerina/http;
-import ballerina/io;
-import mymock.foo as _;
-
-public client class MockHttpClient {
-
-remote function get(@untainted string path, map<string|string[]>? headers = (), http:TargetType targetType = http:Response) returns @tainted http:Response| http:PayloadType | http:ClientError {
-    
-        http:Response mockResponse = new;
-        json mockPayload = {"value":"When Chuck Norris wants an egg, he cracks open a chicken."};
-        mockResponse.setPayload(mockPayload);
-        return mockResponse;
-    }
-}
-
-// @test:Mock {
-//     moduleName: "mymock.foo",
-//     functionName: "getHttpClient"
-// }
-// function getMockClient() returns http:Client {
-//     http:Client mockCl = <http:Client>test:mock(http:Client, new MockHttpClient());
-//     return mockCl;
-// }
 
 @test:Mock {
-    moduleName: "mymock.foo",
-    functionName: "getCurrentClient"
+    functionName: "intializeClient"
 }
-isolated function getCurrentClient() returns http:Client {
-    http:Client mockCl = <http:Client>test:mock(http:Client, new MockHttpClient());
-    return mockCl;
+function getMockClient() returns http:Client|error {
+    return test:mock(http:Client);
 }
- @test:Config {}
- function testGetRandomJoke() {
-     string result = checkpanic getMyJoke("Sheldon");
-     io:println(result);
-     // Verify the return value.   
-     test:assertEquals(result, "When Sheldon wants an egg, he cracks open a chicken.");
- }
-  
+
+@test:Config {}
+public function testGetRandomJoke() returns error? {
+    // Stub to return the specified mock response when the `get` function is called.
+    test:prepare(clientEndpoint).when("get").thenReturn(getMockResponse());
+
+    // Stub to return the specified mock response when the specified argument is passed.
+    test:prepare(clientEndpoint).when("get").withArguments("/categories")
+        .thenReturn(getCategoriesResponse());
+
+    // Invoke the function to test.
+    string result = check getRandomJoke("Sheldon");
+
+    // Verify the return value against the expected string.
+    test:assertEquals(result, "When Sheldon wants an egg, he cracks open a chicken.");
+}
