@@ -7,7 +7,7 @@ import ballerina/http;
 function getMockClient() returns http:Client|error {
     http:Client mockCl = test:mock(http:Client);
     test:prepare(mockCl).when("get")
-        .thenReturnSequence(getCategoriesResponse(), getMockResponse());
+        .thenReturnSequence(getCategoriesResponse(), getMockResponse(),getCategoriesResponse(), getMockResponse());
     // test:prepare(mockCl).when("get").thenReturn(getMockResponse());
 
     // // Stub to return the specified mock response when the specified argument is passed.
