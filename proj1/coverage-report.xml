@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE report PUBLIC "-//JACOCO//DTD Report 1.1//EN" "report.dtd">
 <report name="coverage">
-    <sessioninfo id="dilhasha-a6548260" start="1677569182876" dump="1677569184526" />
+    <sessioninfo id="dilhasha-11cef1e3" start="1677599187661" dump="1677599189057" />
     <package name="dilhashanazeer/proj1/0/types">
         <class name="dilhashanazeer/proj1/0/types/$_object_types" />
         <class name="dilhashanazeer/proj1/0/types/$_tuple_types" />
@@ -104,20 +104,20 @@
         <class name="dilhashanazeer/proj1$test/0/creators/$_function_calls">
             <method name="call"
                 desc="(Lio/ballerina/runtime/internal/scheduling/Strand;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;">
-                <counter type="INSTRUCTION" missed="171" covered="0" />
-                <counter type="BRANCH" missed="40" covered="0" />
-                <counter type="COMPLEXITY" missed="27" covered="0" />
+                <counter type="INSTRUCTION" missed="187" covered="0" />
+                <counter type="BRANCH" missed="46" covered="0" />
+                <counter type="COMPLEXITY" missed="31" covered="0" />
                 <counter type="METHOD" missed="1" covered="0" />
             </method>
-            <counter type="INSTRUCTION" missed="171" covered="0" />
-            <counter type="BRANCH" missed="40" covered="0" />
-            <counter type="COMPLEXITY" missed="27" covered="0" />
+            <counter type="INSTRUCTION" missed="187" covered="0" />
+            <counter type="BRANCH" missed="46" covered="0" />
+            <counter type="COMPLEXITY" missed="31" covered="0" />
             <counter type="METHOD" missed="1" covered="0" />
             <counter type="CLASS" missed="1" covered="0" />
         </class>
-        <counter type="INSTRUCTION" missed="277" covered="0" />
-        <counter type="BRANCH" missed="47" covered="0" />
-        <counter type="COMPLEXITY" missed="37" covered="0" />
+        <counter type="INSTRUCTION" missed="293" covered="0" />
+        <counter type="BRANCH" missed="53" covered="0" />
+        <counter type="COMPLEXITY" missed="41" covered="0" />
         <counter type="METHOD" missed="7" covered="0" />
         <counter type="CLASS" missed="4" covered="0" />
     </package>
@@ -626,7 +626,7 @@
         </class>
         <class name="dilhashanazeer/proj1$test/0/constants/$_string_constants_0">
             <method name="$string_init" desc="()V">
-                <counter type="INSTRUCTION" missed="0" covered="86" />
+                <counter type="INSTRUCTION" missed="0" covered="91" />
                 <counter type="COMPLEXITY" missed="0" covered="1" />
                 <counter type="METHOD" missed="0" covered="1" />
             </method>
@@ -635,7 +635,7 @@
                 <counter type="COMPLEXITY" missed="0" covered="1" />
                 <counter type="METHOD" missed="0" covered="1" />
             </method>
-            <counter type="INSTRUCTION" missed="0" covered="88" />
+            <counter type="INSTRUCTION" missed="0" covered="93" />
             <counter type="COMPLEXITY" missed="0" covered="2" />
             <counter type="METHOD" missed="0" covered="2" />
             <counter type="CLASS" missed="0" covered="1" />
@@ -749,7 +749,7 @@
             <counter type="METHOD" missed="0" covered="11" />
             <counter type="CLASS" missed="0" covered="1" />
         </class>
-        <counter type="INSTRUCTION" missed="0" covered="310" />
+        <counter type="INSTRUCTION" missed="0" covered="315" />
         <counter type="COMPLEXITY" missed="0" covered="25" />
         <counter type="METHOD" missed="0" covered="25" />
         <counter type="CLASS" missed="0" covered="7" />
@@ -776,16 +776,8 @@
                 <counter type="LINE" missed="3" covered="10" />
                 <counter type="METHOD" missed="0" covered="1" />
             </method>
-            <!-- <method name="addInt" desc="(Lio/ballerina/runtime/internal/scheduling/Strand;JJ)J"
-                line="41">
-                <counter type="INSTRUCTION" missed="104" covered="0" />
-                <counter type="BRANCH" missed="8" covered="0" />
-                <counter type="LINE" missed="2" covered="0" />
-                <counter type="METHOD" missed="1" covered="0" />
-            </method> -->
-            <!-- from the proj2 xml -->
             <method name="addInt" desc="(Lio/ballerina/runtime/internal/scheduling/Strand;JJ)J"
-            line="41">
+                line="41">
                 <counter type="INSTRUCTION" missed="65" covered="39" />
                 <counter type="BRANCH" missed="5" covered="3" />
                 <counter type="LINE" missed="0" covered="2" />
@@ -820,10 +812,10 @@
                 <counter type="INSTRUCTION" missed="0" covered="10" />
                 <counter type="METHOD" missed="0" covered="1" />
             </method>
-            <counter type="INSTRUCTION" missed="1290" covered="835" />
-            <counter type="BRANCH" missed="139" covered="43" />
-            <counter type="LINE" missed="7" covered="11" />
-            <counter type="METHOD" missed="3" covered="5" />
+            <counter type="INSTRUCTION" missed="1251" covered="874" />
+            <counter type="BRANCH" missed="136" covered="46" />
+            <counter type="LINE" missed="5" covered="13" />
+            <counter type="METHOD" missed="2" covered="6" />
             <counter type="CLASS" missed="0" covered="1" />
         </class>
         <class name="proj1/utils" sourcefilename="utils.bal">
@@ -870,12 +862,12 @@
             <line nr="35" mi="0" ci="38" mb="0" cb="4" />
             <line nr="36" mi="0" ci="4" mb="0" cb="0" />
             <line nr="38" mi="0" ci="537" mb="0" cb="0" />
-            <line nr="41" mi="6" ci="0" mb="0" cb="0" />
-            <line nr="42" mi="68" ci="0" mb="0" cb="0" />
-            <counter type="INSTRUCTION" missed="1290" covered="835" />
-            <counter type="BRANCH" missed="139" covered="43" />
-            <counter type="LINE" missed="7" covered="11" />
-            <counter type="METHOD" missed="3" covered="5" />
+            <line nr="41" mi="0" ci="6" mb="0" cb="0" />
+            <line nr="42" mi="0" ci="68" mb="0" cb="0" />
+            <counter type="INSTRUCTION" missed="1251" covered="874" />
+            <counter type="BRANCH" missed="136" covered="46" />
+            <counter type="LINE" missed="5" covered="13" />
+            <counter type="METHOD" missed="2" covered="6" />
             <counter type="CLASS" missed="0" covered="1" />
         </sourcefile>
         <sourcefile name="utils.bal">
@@ -894,10 +886,10 @@
             <counter type="METHOD" missed="2" covered="1" />
             <counter type="CLASS" missed="0" covered="1" />
         </sourcefile>
-        <counter type="INSTRUCTION" missed="1753" covered="965" />
-        <counter type="BRANCH" missed="172" covered="53" />
-        <counter type="LINE" missed="12" covered="15" />
-        <counter type="METHOD" missed="5" covered="6" />
+        <counter type="INSTRUCTION" missed="1714" covered="1004" />
+        <counter type="BRANCH" missed="169" covered="56" />
+        <counter type="LINE" missed="10" covered="17" />
+        <counter type="METHOD" missed="4" covered="7" />
         <counter type="CLASS" missed="0" covered="2" />
     </package>
     <package name="dilhashanazeer/proj1$test/0/annotations">
@@ -1215,10 +1207,10 @@
         <counter type="METHOD" missed="0" covered="25" />
         <counter type="CLASS" missed="0" covered="7" />
     </package>
-    <counter type="INSTRUCTION" missed="3347" covered="2197" />
-    <counter type="BRANCH" missed="430" covered="105" />
-    <counter type="LINE" missed="12" covered="17" />
-    <counter type="COMPLEXITY" missed="225" covered="78" />
-    <counter type="METHOD" missed="60" covered="84" />
+    <counter type="INSTRUCTION" missed="3324" covered="2241" />
+    <counter type="BRANCH" missed="433" covered="108" />
+    <counter type="LINE" missed="10" covered="19" />
+    <counter type="COMPLEXITY" missed="229" covered="78" />
+    <counter type="METHOD" missed="59" covered="85" />
     <counter type="CLASS" missed="10" covered="27" />
 </report>

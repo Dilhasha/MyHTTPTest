@@ -23,3 +23,8 @@ public function testGetRandomJoke() returns error? {
     // Verify the return value against the expected string.
     test:assertEquals(result, "When Sheldon wants an egg, he cracks open a chicken.");
 }
+
+@test:Config {}
+public function testSum() returns error? {
+    test:assertEquals(addInt(1, 2), 3);
+}
