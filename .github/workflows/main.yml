@@ -27,4 +27,4 @@ jobs:
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: ./coverage-report_1.xml,./coverage-report_2.xml
+          files: coverage-report_1.xml,coverage-report_2.xml
