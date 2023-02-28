@@ -776,12 +776,20 @@
                 <counter type="LINE" missed="3" covered="10" />
                 <counter type="METHOD" missed="0" covered="1" />
             </method>
-            <method name="addInt" desc="(Lio/ballerina/runtime/internal/scheduling/Strand;JJ)J"
+            <!-- <method name="addInt" desc="(Lio/ballerina/runtime/internal/scheduling/Strand;JJ)J"
                 line="41">
                 <counter type="INSTRUCTION" missed="104" covered="0" />
                 <counter type="BRANCH" missed="8" covered="0" />
                 <counter type="LINE" missed="2" covered="0" />
                 <counter type="METHOD" missed="1" covered="0" />
+            </method> -->
+            <!-- from the proj2 xml -->
+            <method name="addInt" desc="(Lio/ballerina/runtime/internal/scheduling/Strand;JJ)J"
+            line="41">
+                <counter type="INSTRUCTION" missed="65" covered="39" />
+                <counter type="BRANCH" missed="5" covered="3" />
+                <counter type="LINE" missed="0" covered="2" />
+                <counter type="METHOD" missed="0" covered="1" />
             </method>
             <method name="$getRandomJoke_category"
                 desc="(Lio/ballerina/runtime/internal/scheduling/Strand;Lio/ballerina/runtime/api/values/BString;)Lio/ballerina/runtime/api/values/BString;"
