@@ -36,3 +36,7 @@ function getRandomJoke(string name, string category = "food") returns @tainted s
         return replacedText;
 
 }
+
+public function addInt(int a, int b) returns int {
+    return a + b;
+}
