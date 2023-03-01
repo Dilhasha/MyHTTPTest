@@ -1,5 +1,5 @@
 fixes:
-    - "dilhashanazeer/proj1/*/::../proj1/"
+    - "dilhashanazeer/proj1/*/::proj1/"
 
 ignore:
     - "proj2"
