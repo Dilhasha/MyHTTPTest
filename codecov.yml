@@ -1,5 +1,6 @@
 fixes:
-    - "dilhashanazeer/proj1/*/::proj1/"
+    - "dilhashanazeer/proj1/0/utils::proj1/utils"
+    - "dilhashanazeer/proj1/0/main::proj1/main"
 
 ignore:
     - "proj2"
